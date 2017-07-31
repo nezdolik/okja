@@ -36,7 +36,7 @@ public class RPCADemo {
   /**
    * zero mean, unit variance
    *
-   * rpca uses specific epsilons and expects value range to be standardized
+   * rsvd inside rpca uses specific epsilons and expects value range to be standardized
    */
   private static void standardizeFeatures(final double[][] data) {
     double mean = mean(data);
