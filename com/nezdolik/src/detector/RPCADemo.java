@@ -21,7 +21,7 @@ public class RPCADemo {
     final TimeSeries.Matrix2DTransformer transformer = new TimeSeries.Matrix2DTransformer();
     double[][] data = transformer.transform(TimeSeries.defaultX5(), 3, 5);//5 per season
 
-    standardizeFeatures(data);
+    //standardizeFeatures(data);
 
     RPCA rpca = new RPCA(data, LPENALTY_DEFAULT, RPENALTY_DEFAULT);
     RealMatrix L = rpca.getL();
